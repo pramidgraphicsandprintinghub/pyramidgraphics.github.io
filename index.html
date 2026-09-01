@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pyramid Graphics & Printing Hub — professional graphics design, printing, typing, photocopy, binding and digital business-centre services.">
+  <meta name="theme-color" content="#111827">
+  <title>Pyramid Graphics & Printing Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="brand"><img src="logo.png" alt="Pyramid Graphics & Printing Hub logo"></a>
+      <button class="menu" aria-label="Open menu">☰</button>
+      <nav class="nav-links">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="#order">Order Now</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">CREATIVE • PRINT • DIGITAL</span>
+          <h1>Your ideas. Our creativity. Professional results.</h1>
+          <p class="hero-text">Pyramid Graphics & Printing Hub provides reliable graphics design, printing, document and business-centre services for individuals, students, schools and businesses.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#order">Start an Order →</a>
+            <a class="btn secondary" href="#services">Explore Services</a>
+          </div>
+          <div class="trust-row"><span>✓ Quality work</span><span>✓ Fast service</span><span>✓ Customer focused</span></div>
+        </div>
+        <div class="hero-card"><img class="hero-logo" src="logo.png" alt="Pyramid Graphics & Printing Hub"><div class="hero-card-bottom"><strong>DESIGN • PRINT • DIGITAL</strong><small>Your one-stop creative & digital hub</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="container stats-grid">
+        <div><strong>01</strong><span>Creative Design</span></div>
+        <div><strong>02</strong><span>Professional Printing</span></div>
+        <div><strong>03</strong><span>Business Centre</span></div>
+        <div><strong>04</strong><span>Digital Services</span></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">WHAT WE DO</span><h2>Services built around your needs.</h2><p>From a single document to a complete branding package, we help you get it done professionally. Every job is quoted based on your specific requirements.</p></div>
+        <div class="service-grid">
+          <article class="service"><div class="icon">✦</div><h3>Graphics Design</h3><p>Logos, flyers, posters, business cards, invitations, banners and social-media designs.</p><a href="#order">Request design →</a></article>
+          <article class="service"><div class="icon">▣</div><h3>Printing & Photocopy</h3><p>Black-and-white and colour printing, photocopying and quality document production.</p><a href="#order">Request printing →</a></article>
+          <article class="service"><div class="icon">⌘</div><h3>Typing & Documents</h3><p>Professional typing, editing, formatting, CVs, letters, assignments and reports.</p><a href="#order">Send document →</a></article>
+
+          <article class="service"><div class="icon">◎</div><h3>Academic Services</h3><p>Project formatting, research document preparation, assignment support and presentation materials.</p><a href="#order">Get assistance →</a></article>
+          <article class="service"><div class="icon">⌁</div><h3>Digital & Online Services</h3><p>Scanning, document conversion and selected online/business-centre support services.</p><a href="#order">Make a request →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section dark-section">
+      <div class="container about-grid">
+        <div><span class="eyebrow">ABOUT PYRAMID</span><h2>Your creative partner for everyday business needs.</h2></div>
+        <div><p>Pyramid Graphics & Printing Hub is designed as a dependable one-stop destination for graphics, printing, document and digital business-centre services.</p><p>Our goal is simple: make your work look professional, save you time and give you a smooth customer experience.</p><div class="check-list"><span>✓ Professional presentation</span><span>✓ Friendly service</span><span>✓ Practical solutions</span></div></div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">PORTFOLIO</span><h2>Showcase your best work.</h2><p>Replace these sample cards with your real designs, flyers, logos and printed projects.</p></div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card one"><span>BRANDING</span><strong>Logo & Identity</strong></div>
+          <div class="portfolio-card two"><span>PRINT</span><strong>Flyer Design</strong></div>
+          <div class="portfolio-card three"><span>BUSINESS</span><strong>Business Card</strong></div>
+          <div class="portfolio-card four"><span>ACADEMIC</span><strong>Project & Reports</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section order-section">
+      <div class="container order-grid">
+        <div><span class="eyebrow">QUICK ORDER</span><h2>Tell us what you need.</h2><p>Fill the form and it will prepare a WhatsApp message for you. We will review your request and give you a quotation based on the job.</p><div class="order-note">💬 No fixed prices: every job is quoted according to size, quantity, materials and requirements.<br><br>📎 For files, send your document after the WhatsApp chat opens.</div></div>
+        <form id="orderForm" class="order-form">
+          <label>Your name<input id="name" required placeholder="e.g. Abdulhamid"></label>
+          <label>Phone number<input id="phone" required placeholder="e.g. 080..."></label>
+          <label>Service<select id="service" required><option value="">Select a service</option><option>Graphics Design</option><option>Printing</option><option>Photocopy</option><option>Typing / Document Formatting</option><option>Academic Services</option><option>Digital / Online Services</option></select></label>
+          <label>What do you need?<textarea id="details" rows="4" required placeholder="Briefly describe your request..."></textarea></label>
+          <button class="btn primary full" type="submit">Send Order via WhatsApp →</button>
+          <small class="form-help">Before publishing, replace the WhatsApp number in <b>script.js</b> with your business number.</small>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-heading"><span class="eyebrow">CONTACT</span><h2>Let's work on your next project.</h2></div>
+        <div class="contact-grid">
+          <div><span class="contact-label">PHONE / WHATSAPP</span><h3>0810 810 0528</h3><p>Available for calls and WhatsApp enquiries.</p></div>
+          <div><span class="contact-label">LOCATION</span><h3>Your Business Address</h3><p>Replace with your exact location.</p></div>
+          <div><span class="contact-label">OPENING HOURS</span><h3>Mon – Sat</h3><p>Replace with your actual opening hours.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer"><div class="brand"><img src="logo.png" alt="Pyramid Graphics & Printing Hub logo"></div><p>© <span id="year"></span> Pyramid Graphics & Printing Hub. All rights reserved.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
